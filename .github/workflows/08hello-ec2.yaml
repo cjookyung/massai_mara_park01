@@ -26,7 +26,7 @@ jobs:
               run: |
                 echo "SSH 연결 테스트 시작..."
 
-                ssh -vvv -o StrictHostKeyChecking=no -o "UserKnownHostsFile=/dev/null" -i ~/.ssh/ec2_key -p 6725 \
+                ssh -vvv -o StrictHostKeyChecking=no -o "UserKnownHostsFile=/dev/null" -i ~/.ssh/ec2_key -p 22 \
                 ${USER_NAME}@${HOSTNAME} '
                 
                     echo "현재사용자: ${whoami}"
