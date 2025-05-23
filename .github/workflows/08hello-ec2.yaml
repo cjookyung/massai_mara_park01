@@ -17,7 +17,7 @@ jobs:
             - name: make private key file
               run: |
                 echo "${{ secrets.EC2_PRIVATEKEY }}" > ~/.ssh/ec2_key
-                chmod 600 ~/.ssh/ec2key
+                chmod 600 ~/.ssh/ec2_key
 
             - name: test SSH connect to EC2
               env: 
