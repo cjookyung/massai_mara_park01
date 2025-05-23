@@ -52,7 +52,7 @@ jobs:
       - name: download JAR artifact
         uses: actions/download-artifact@v4
         with: 
-          name: application.jar
+          name: docker-image
 
       - name: check downloaded image
         run: ls -al
