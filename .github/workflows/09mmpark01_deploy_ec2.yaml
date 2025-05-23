@@ -4,7 +4,7 @@ on:
   workflow_dispatch
 
 env:
-  EC2_HOSTNAME: 13.125.218.128
+  EC2_HOSTNAME: 43.201.85.8
   EC2_USERNAME: ubuntu
 
 jobs:
